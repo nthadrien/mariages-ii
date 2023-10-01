@@ -25,9 +25,7 @@ window.onload = () => {
         dys.innerText = days >= 10 ? days : '0' + days;
     }, 1000);
 
-    const music = document.querySelector('video');
-    music.autoplaylay = true;
-    music.load();
+    
 };
 
 function toggle() {
@@ -39,3 +37,8 @@ function showIt() {
     const vid = document.querySelector('.vid-container');
     vid.classList.toggle('showme');
 }
+
+const music = document.querySelector('video');
+music.autoplay = true;
+music.preload = true;
+music.load();
