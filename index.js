@@ -1,6 +1,6 @@
 window.onload = () => {
 
-    const dateline = new Date('sun oct 1 2023 19:00:05 GMT+0300 (East Africa Time)');
+    const dateline = new Date('sun oct 3 2023 19:00:05 GMT+0300 (East Africa Time)');
 
     const sec = document.querySelector('#sec');
     const mins = document.querySelector('#min');
