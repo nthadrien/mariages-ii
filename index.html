@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Mariage de Alphonse</title>
+</head>
+
+<body>
+    
+    <main>
+        <aside class="front">
+            <h1>Chère famille et amis,</h1>
+
+            <p>
+                Nous serions honorés de compter sur votre présence le jour de notre mariage pour célébrer ensemble notre
+                union.
+            </p>
+            <h2>Qui aura lieu dans exactement:</h2>
+            <section id="count-down-container">
+                <div class="box-timer">
+                    <h4 id="day">0</h4>
+                    <p>jours</p>
+                </div>
+                <div class="box-timer">
+                    <h4 id="hr">0</h4>
+                    <p>heures</p>
+                </div>
+                <div class="box-timer">
+                    <h4 id="min">0</h4>
+                    <p>minutes</p>
+                </div>
+                <div class="box-timer">
+                    <h4 id="sec">0</h4>
+                    <p>secondes</p>
+                </div>
+            </section>
+            <div class="btn-div">
+                <button onclick="toggle()">Plus De Details</button>
+                <button title="voir le lyrics" onclick="showIt()"> <small>♫</small> </button>
+            </div>
+        </aside>
+
+        <aside class="back">
+            <img class="i-couple" src="./assets/download.jpg" alt="couple">
+            <p>
+                À l'approche de notre journée spéciale, nous avons décidé d'adopter une approche légèrement differente
+                pour vous inviter. Nous aimerons aussi solliciter tout types d'aides pour l'organisation. 
+            </p>
+            <p>
+                Pour plus d'inforamtion svp contactez le par appel +237 6XXXXXX
+                pour plus de details. Ou sur whatsapp en cliquant ici
+            </p>
+            <h3>
+                [Prénom de la mariée] &amp; [Prénom du marié]
+            </h3>
+
+            <div class="btn-div">
+                <button onclick="toggle()">Revenir</button>
+                <button title="voir le lyrics" onclick="showIt()"> <small>♫</small> </button>
+            </div>
+        </aside>
+
+    </main>
+    
+    <div class="vid-container">
+        <button class="vid-btn" title="voir le lyrics" onclick="showIt()"> <small>‹</small> </button>
+        <video autoplay preload="auto" controls>
+            <source src="./assets/Darina Victry - Laisse moi t'aimer (Paroles).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+
+    <footer>
+        <p>&copysr; Q-project Ltd. All rights reserved. contact Us here</p>
+    </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>
