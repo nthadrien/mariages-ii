@@ -1,6 +1,13 @@
 window.onload = () => {
 
-    const dateline = new Date('sun oct 3 2023 19:00:05 GMT+0300 (East Africa Time)');
+    const music = document.querySelector('video');
+    music.autoplay = true;
+    music.preload = true;
+    music.load();
+
+    console.log(music)
+
+    const dateline = new Date('sun oct 15 2023 19:00:05 GMT+0300 (East Africa Time)');
 
     const sec = document.querySelector('#sec');
     const mins = document.querySelector('#min');
@@ -37,8 +44,3 @@ function showIt() {
     const vid = document.querySelector('.vid-container');
     vid.classList.toggle('showme');
 }
-
-const music = document.querySelector('video');
-music.autoplay = true;
-music.preload = true;
-music.load();
