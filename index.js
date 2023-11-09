@@ -23,9 +23,11 @@ window.onload = () => {
         dys.innerText = days >= 10 ? days : '0' + days;
     }, 1000);
 
-    const music = document.querySelector('video').play();
+    const music = document.querySelector('video');
     music.autoplay = true;
     music.preload = 'auto';
+    music.playsInline = true;
+    music.play()
 };
 
 function toggle() {
