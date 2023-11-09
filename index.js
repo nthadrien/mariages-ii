@@ -1,14 +1,6 @@
 window.onload = () => {
 
-    const music = document.querySelector('video');
-    music.autoplay = true;
-    music.preload = true;
-    music.load();
-
-    console.log(music)
-
-    const dateline = new Date('sun oct 15 2023 19:00:05 GMT+0300 (East Africa Time)');
-
+    const dateline = new Date('sun nov 25 2023 19:00:05 GMT+0300 (East Africa Time)');
     const sec = document.querySelector('#sec');
     const mins = document.querySelector('#min');
     const hrs = document.querySelector('#hr');
@@ -19,7 +11,6 @@ window.onload = () => {
         const today = new Date();
         // time differences
         var diff = dateline.getTime() - today.getTime()
-
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(diff / (1000 * 60 * 60 * 24)).toString();
         var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString();
@@ -32,7 +23,9 @@ window.onload = () => {
         dys.innerText = days >= 10 ? days : '0' + days;
     }, 1000);
 
-    
+    const music = document.querySelector('video').play();
+    music.autoplay = true;
+    music.preload = 'auto';
 };
 
 function toggle() {
